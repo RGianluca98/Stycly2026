@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Stycly — Noleggio Moda Bimbo & Props</title>
-<link rel="icon" type="image/png" href="Favicon.png" sizes="64x64">
+<link rel="icon" type="image/png" href="Favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
@@ -614,7 +614,7 @@ function showFetchError(msg) {
 }
 
 function decodeLatin1(buf) {
-  return new TextDecoder('windows-1252').decode(buf);
+  return new TextDecoder('utf-8').decode(buf);
 }
 
 function fetchCSV(url) {
