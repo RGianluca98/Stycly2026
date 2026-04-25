@@ -164,28 +164,6 @@ header{
 }
 .card:active{transform:translateY(-3px);}
 
-/* ── NASTRO WASHI TAPE (::before) ── */
-.card::before{
-  content:'';
-  position:absolute;
-  top:-9px;left:50%;
-  transform:translateX(-50%) rotate(-2.5deg);
-  width:30px;height:11px;
-  background:rgba(244,194,178,0.7);
-  border-radius:2px;
-  box-shadow:0 1px 4px rgba(0,0,0,0.06);
-  pointer-events:none;z-index:4;
-}
-.card:nth-child(even)::before{
-  transform:translateX(-50%) rotate(2deg);
-  left:46%;
-  background:rgba(186,213,232,0.7);
-}
-.card:nth-child(3n)::before{
-  transform:translateX(-50%) rotate(-1deg);
-  left:54%;
-  background:rgba(197,216,191,0.7);
-}
 /* area immagine */
 .card-img-wrap{
   position:relative;
@@ -194,7 +172,7 @@ header{
   overflow:hidden;
   border-radius:calc(var(--r-lg) - 2px) calc(var(--r-lg) - 2px) 0 0;
 }
-.card-img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.3s;}
+.card-img{width:100%;height:100%;object-fit:contain;display:block;transition:transform 0.3s;}
 .card:hover .card-img{transform:scale(1.04);}
 .card-nophoto{
   width:100%;height:100%;display:flex;flex-direction:column;
